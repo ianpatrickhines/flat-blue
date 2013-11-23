@@ -670,15 +670,41 @@ ul#page-stream {
 
 .home-page .header-background {
   background: rgba(41, 128, 185,0.7);
-  height: 600px;
+  height: 700px;
 }
 
 .home-page .header-container {
-  height: 600px;
-  background: url("desk.jpg") bottom center repeat-x;
+  height: 700px;
+  background: url("desk2.jpg") bottom center repeat-x;
 }
 
 .home-page topnav li {
   background-color: transparent;
   border: 1px solid transparent;
+}
+
+// #Top
+
+.home-page #top {
+  margin: 300px 0;
+}
+
+.home-page #top h2 {
+  font-size: 72px;
+  line-height: 1em;
+}
+
+.home-page #top h2 strong {
+  font-weight: normal;
+}
+
+// Tagline
+
+.home-page .tagline h2 {
+  font-weight: lighter;
+  font-size: 48px;
+}
+
+.home-page .tagline h2 strong {
+  font-weight: normal;
 }
