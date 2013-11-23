@@ -449,7 +449,7 @@ nav {
 // page layout if the sidebar is turned on
 
 .twocolumn-container {
-  margin-top: -30px;
+  margin-top: 30px;
   .left-column, .right-column-wide {
     background-color: #fff;
     padding: 20px;
@@ -841,10 +841,11 @@ ul#page-stream {
 // site wide footer
 
 footer {
-  background-color: #fff;
+  background-color: inherit;
+  color: #fff;
   padding: 20px;
-  @include border-radius(5px);
-  border: 1px solid $theme-color-6;
+  // @include border-radius(5px);
+  // border: 1px solid $theme-color-6;
   .footer-text p {
     margin: 0;
   }
@@ -854,6 +855,11 @@ footer {
   .footer-right {
     margin-top: 15px;
   }
+}
+
+footer a {
+  color: inherit;
+  text-decoration: underline;
 }
 
 // byline used in blogs, suggestion boxes, events, etc.
@@ -1995,4 +2001,10 @@ input:focus, textarea:focus {
   background: $theme-color-1;
   padding: 20px 0;
   margin-bottom: -20px;
+}
+
+// Header background
+
+.home-page .header-background {
+  background: url();
 }
