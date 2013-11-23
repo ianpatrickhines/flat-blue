@@ -28,7 +28,8 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="theme.scss" type="text/css">
     <link rel="stylesheet" href="tablet-and-desktop.scss" type="text/css" media="screen and (min-width: 768px)">
-    <link href='//fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="ss-standard.css" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css">
     <link rel="alternate" type="application/rss+xml" href="http://www.ianpatrickhines.com/blog.rss" title="Subscribe to the blog">
     
     <!-- because ie8 ignores media queries, we need this -->
@@ -124,6 +125,8 @@
       <!-- #wrap -->
     </div>
     <!-- #pattern -->
+
+    {{ content_for_footer }}
     
     {% if site.has_background_image? %}
     <!--[if lt IE 9]>
