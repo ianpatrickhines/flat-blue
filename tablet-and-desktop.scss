@@ -213,9 +213,9 @@ nav, .subnav {
     margin: 0 10px 10px 0;
     position: relative;
     background-color: transparent;
-    border: 1px solid transparent;
+    border-bottom: 3px solid transparent;
     line-height: 55px;
-    @include border-radius(2px);
+    // @include border-radius(2px);
     a {
       display: block;
       width: 100%;
@@ -227,8 +227,8 @@ nav, .subnav {
         margin-right: 0;
       }
       &:hover, &.active{
-        border-color: transparent;
-        background-color: $theme-color-3;
+        border-color: #fff;
+        background-color: transparent;
         a {
           color: #fff;
         }
