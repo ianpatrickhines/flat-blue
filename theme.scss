@@ -452,9 +452,9 @@ nav {
   margin-top: 30px;
   .left-column, .right-column-wide {
     background-color: #fff;
-    padding: 20px;
-    @include border-radius(5px);
-    border: 1px solid $theme-color-6;
+    padding: 0;
+    // @include border-radius(5px);
+    // border: 1px solid $theme-color-6;
     margin-bottom: 15px;
   }
   .right-column, .left-column-narrow {
@@ -466,7 +466,7 @@ nav {
 
 .onecolumn-container {
   background-color: #fff;
-  padding: 20px;
+  padding: 0;
   // @include border-radius(5px);
   // border: 1px solid $theme-color-6;
   margin-top: 30px;
@@ -843,7 +843,7 @@ ul#page-stream {
 footer {
   background-color: inherit;
   color: #fff;
-  padding: 20px;
+  padding: 0;
   // @include border-radius(5px);
   // border: 1px solid $theme-color-6;
   .footer-text p {
@@ -2000,7 +2000,7 @@ input:focus, textarea:focus {
 .big-footer {
   background: $theme-color-1;
   padding: 20px 0;
-  margin-bottom: -20px;
+  margin: 20px 0 -20px 0;
 }
 
 // Header background
