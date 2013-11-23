@@ -467,9 +467,9 @@ nav {
 .onecolumn-container {
   background-color: #fff;
   padding: 20px;
-  @include border-radius(5px);
-  border: 1px solid $theme-color-6;
-  margin-top: -30px;
+  // @include border-radius(5px);
+  // border: 1px solid $theme-color-6;
+  margin-top: 30px;
   margin-bottom: 20px;
 }
 
@@ -833,8 +833,8 @@ ul#page-stream {
 // container for entire header area
 
 .header-container {
-  padding-bottom: 40px;
-  min-height: 140px;
+  padding-bottom: 20px;
+  min-height: 100px;
   background: url($header-texture) repeat-x $header-color;
 }
 
@@ -1987,4 +1987,12 @@ input:focus, textarea:focus {
 // Make forms & leaderboards have proper background color
 .form-wrap, .people-list.odd, .pagination .active, .pagination a:hover, .table-striped tbody > tr:nth-child(odd) > td, .membership {
   background-color: $theme-color-6 !important;
+}
+
+// Big footer
+
+.big-footer {
+  background: $theme-color-1;
+  padding: 20px 0;
+  margin-bottom: -20px;
 }
