@@ -2041,7 +2041,44 @@ input:focus, textarea:focus {
 
 // icons
 
-.services-overview h3.ss-icon {
+.services-overview {
+  margin: 40px 0;  
+}
+
+.services-overview .service {
+  min-height: 300px;
+}
+
+.services-overview h4.ss-icon {
   text-align: center;
-  font-size: 72px;
+  font-size: 72px; 
+  padding-bottom: 20px; 
+  color: $silver;
+}
+
+.services-overview h3 {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.services-overview p {
+  text-align: center;
+}
+
+// About blurb on home page
+
+.home-page .home-about {
+  height: auto;
+  background: $clouds;
+  padding: 40px;
+}
+
+.get-started {
+  margin-bottom: 56px;
+}
+
+// Remove underline from NationBuilder link in footer
+
+.footer-right a {
+  text-decoration: none;
 }

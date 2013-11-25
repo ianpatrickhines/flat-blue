@@ -708,3 +708,22 @@ ul#page-stream {
 .home-page .tagline h2 strong {
   font-weight: normal;
 }
+
+// About blurb on home page
+
+.home-page .home-about {
+  height: 700px;
+  background: url("ardmore.jpg") top center repeat-x;
+}
+
+.bio-container {
+  padding: 80px 0 0 0 !important;
+}
+
+.home-page .home-about p {
+  max-width: 480px;
+}
+
+.get-started {
+  margin-bottom: 56px;
+}
