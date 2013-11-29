@@ -75,20 +75,20 @@
         {% else %}
 
         <div class="padtopmore">
-          <a href="http://www.ianpatrickhines.com/blog.rss"><i class="icon-rss"></i></a> <a href="http://www.ianpatrickhines.com/blog.rss">Subscribe with RSS</a>
+          <a href="http://www.ianpatrickhines.com/blog.rss"><i class="ss-icon" style="padding-right: 5px; font-size: .8em;">rss</i></a> <a href="http://www.ianpatrickhines.com/blog.rss">Subscribe with RSS</a>
         </div>
 
         {% endif %}        
 
         {% if page and page.slug == "commentary" or page.slug == "interviews" or page.slug == "articles" %}
         <div class="padtopmore">
-          <a href="{{ page.rss_url }}"><i class="icon-rss"></i></a> <a href="{{ page.rss_url }}">{{ page.headline }} Only (RSS)</a>
+          <a href="{{ page.rss_url }}"><i class="ss-icon" style="padding-right: 5px; font-size: .8em;">rss</i></a> <a href="{{ page.rss_url }}">{{ page.headline }} Only (RSS)</a>
         </div>
         {% endif %}
 
         {% if page and page.has_parent? and page.parent.has_rss? and page.parent.slug != "blog" %}
         <div class="padtopmore">
-          <a href="{{ page.parent.rss_url }}"><i class="icon-rss"></i></a>
+          <a href="{{ page.parent.rss_url }}"><i class="ss-icon" style="padding-right: 5px; font-size: .8em;">rss</i></a>
           <a href="{{ page.parent.rss_url }}">{{ page.parent.headline }} Only (RSS)</a>
         </div>
         {% endif %}
