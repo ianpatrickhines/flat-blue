@@ -35,10 +35,10 @@
       </div>
     </div>
     {% if request.current_signup.has_facebook_info? %}
-    <a href="{{ request.facebook_connect_url }}"><img src="{{ "signin_with_facebook.png" | asset_path }}" style="margin-right: 5px;" /></a>
+    <a class="button facebook-button" href="{{ request.facebook_connect_url }}"><span class="ss-icon ss-social" style="padding-right: 5px; font-size: .8em;">facebook</span> Sign in with Facebook</a>
     {% endif %}
     {% if request.current_signup.has_twitter_info? %}
-    <a href="{{ request.twitter_connect_url }}"><img src="{{ "signin_with_twitter.png" | asset_path }}" style="margin-left: 5px;" /></a>
+    <a class="button twitter-button" href="{{ request.twitter_connect_url }}"><span class="ss-icon ss-social" style="padding-right: 5px; font-size: .8em;">twitter</span> Sign in with Twitter</a>
     {% endif %}
   </div>
   {% endif %}
@@ -57,12 +57,12 @@
   <div class="padtopmore">
     {% if request.current_signup.has_facebook_info? %}
     <div class="padtopless">
-      <a href="{{ request.facebook_connect_url }}"><img src="{{ "signin_with_facebook.png" | asset_path }}"></a>
+      <a class="button facebook-button" href="{{ request.facebook_connect_url }}"><span class="ss-icon ss-social" style="padding-right: 5px; font-size: .8em;">facebook</span> Sign in with Facebook</a>
     </div>
     {% endif %}
     {% if request.current_signup.has_twitter_info? %}
     <div class="padtopless">
-      <a href="{{ request.twitter_connect_url }}"><img src="{{ "signin_with_twitter.png" | asset_path }}"></a>
+      <a class="button twitter-button" href="{{ request.twitter_connect_url }}"><span class="ss-icon ss-social" style="padding-right: 5px; font-size: .8em;">twitter</span> Sign in with Twitter</a>
     </div>
     {% endif %}
     <div class="padtop">or...</div>
@@ -93,10 +93,10 @@
     <div class="padtopmore">
 
       <div class="signin-with-facebook">
-        <a title="Sign in with Facebook" href="{{ request.facebook_connect_url }}"><img src="{{ "signin_with_facebook.png" | asset_path }}" alt="Sign in with Facebook"></a>
+        <a class="button facebook-button" href="{{ request.facebook_connect_url }}"><span class="ss-icon ss-social" style="padding-right: 5px; font-size: .8em;">facebook</span> Sign in with Facebook</a>
       </div>
       <div class="signin-with-twitter">
-        <a title="Sign in with Twitter" href="{{ request.twitter_connect_url }}"><img src="{{ "signin_with_twitter.png" | asset_path }}" alt="Sign in with Twitter"></a>
+        <a class="button twitter-button" href="{{ request.twitter_connect_url }}"><span class="ss-icon ss-social" style="padding-right: 5px; font-size: .8em;">twitter</span> Sign in with Twitter</a>
       </div>
 
     </div>
