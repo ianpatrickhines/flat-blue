@@ -2022,6 +2022,7 @@ input:focus, textarea:focus {
 
 #top {
   margin: 225px 0;
+  text-align: center;
 }
 
 #top h2 {
@@ -2081,4 +2082,34 @@ input:focus, textarea:focus {
 
 .footer-right a {
   text-decoration: none;
+}
+
+// Button White-Border
+
+.button-white-border {
+  background: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  font-size: 18px;
+}
+
+a.button-white-border:hover {
+  background: #fff;
+  color: $theme-color-1;
+  border: 1px solid #fff;
+}
+
+// Button Blue-Border
+
+.button-blue-border {
+  background: transparent;
+  color: $theme-color-1;
+  border: 1px solid $theme-color-1;
+  font-size: 18px;
+}
+
+a.button-blue-border:hover {
+  background: #2e8ece;
+  color: #fff;
+  border: 1px solid #2e8ece;
 }
