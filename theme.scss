@@ -2113,3 +2113,27 @@ a.button-blue-border:hover {
   color: #fff;
   border: 1px solid #2e8ece;
 }
+
+// Facebook & Twitter buttons
+
+a.facebook-button {
+  background: #547fb7;
+  border: 1px solid #547fb7;
+}
+
+a.facebook-button:hover {
+  background: transparent;
+  border: 1px solid #547fb7;
+  color: #547fb7;
+}
+
+a.twitter-button {
+  background: #69d1d6;
+  border: 1px solid #69d1d6;
+}
+
+a.twitter-button:hover {
+  background: transparent;
+  border: 1px solid #69d1d6;
+  color: #69d1d6;
+}
