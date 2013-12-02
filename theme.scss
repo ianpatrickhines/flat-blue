@@ -2070,12 +2070,21 @@ input:focus, textarea:focus {
 
 .home-page .home-about {
   height: auto;
-  background: $clouds;
+  background: $theme-color-1;
   padding: 40px;
 }
 
+.home-page .home-about a {
+  text-decoration: underline;
+}
+
+.home-page .home-about, .home-page .home-about a {
+  color: #fff !important;
+} 
+
 .get-started {
-  margin-bottom: 56px;
+  padding-bottom: 56px;
+  background: $theme-color-6;
 }
 
 // Remove underline from NationBuilder link in footer
@@ -2136,4 +2145,61 @@ a.twitter-button:hover {
   background: transparent;
   border: 1px solid #69d1d6;
   color: #69d1d6;
+}
+
+// Change input border color
+
+textarea, input {
+  border: 1px solid $theme-color-6;
+}
+
+// Home Contact Form
+
+.get-started {
+  margin-bottom: -20px;
+}
+
+.get-started h2 {
+  padding-bottom: 0;
+}
+
+.home-contact input, .home-contact textarea {
+  font-size: 18px;
+  line-height: 1.4em;
+  width: 100%;
+  background: #fff;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  margin: 0 0 10px 0;
+}
+
+.home-contact input.submit-button {
+  background: $theme-color-1 !important;
+}
+
+.home-contact input.submit-button:hover {
+  background: #2e8ece !important;
+}
+
+.home-contact textarea {
+  height: 245px !important;
+}
+
+.send-your-message {
+  padding-top: 30px;
+  text-align: center;
+}
+
+// Footer text
+
+.footer-text p {
+  padding-bottom: .8em;
+}
+
+.footer-text p a {
+  text-decoration: none;
+}
+
+.footer-text p a:hover {
+  text-decoration: underline;
 }

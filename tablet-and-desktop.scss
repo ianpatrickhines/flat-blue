@@ -716,6 +716,15 @@ ul#page-stream {
   background: url("ardmore.jpg") top center repeat-x;
 }
 
+.home-page .home-about {
+  color: inherit !important;
+} 
+
+.home-page .home-about a {
+  color: $theme-color-1 !important;
+  text-decoration: none;
+} 
+
 .bio-container {
   padding: 80px 0 0 0 !important;
 }
@@ -724,6 +733,15 @@ ul#page-stream {
   max-width: 480px;
 }
 
-.get-started {
-  margin-bottom: 56px;
+// Footer links
+
+.footer-text p {
+  display: inline;
+  padding-left: 3em;
+}
+
+// Footer links
+
+.footer-text p:first-child {
+ padding-left: 0;
 }
