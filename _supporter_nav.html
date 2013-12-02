@@ -246,6 +246,10 @@
   <li {% if page == child %}class="on"{% endif %}>
     <a href="{{ child.url }}"><i class="ss-icon" style="padding-right: 5px; font-size: .8em;">book</i> {{ child.name }}</a>
   </li>
+  {% elsif child.type_name == "Volunteer Signup" %}
+  <li {% if page == child %}class="on"{% endif %}>
+    <a href="{{ child.url }}"><i class="ss-icon" style="padding-right: 5px; font-size: .8em;">map</i> {{ child.name }}</a>
+  </li>
   {% else %}
   <li {% if page == child %}class="on"{% endif %}>
     <a href="{{ child.url }}"><i class="ss-icon" style="padding-right: 5px; font-size: .8em;">page</i> {{ child.name }}</a>
