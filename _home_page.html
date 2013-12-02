@@ -153,14 +153,15 @@
 
           </div>
 
-          <div class="width-container get-started">
+        <div class="main-container get-started">
+          <div class="width-container">
 
               <div class="row-fluid padbottommore">
                 <div class="span12 tagline ">
                   <h2>Ready to get started?</h2>
                 </div>
               </div>
-              <div class="row-fluid">
+              {% comment %}<div class="row-fluid">
                 <div class="span4">
                   &nbsp;
                 </div>
@@ -170,8 +171,11 @@
                 <div class="span4">
                   &nbsp;
                 </div>
-              </div>
+              </div>{% endcomment %}
+
+              {% subpage "home_contact" with "home_contact_form" %}
           </div>
+        </div>
 
             <!-- .main -->
           </div>
