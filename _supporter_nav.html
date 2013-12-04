@@ -144,7 +144,7 @@
   {% for child in site.supporter_pages %}
   {% if child.type_name == "Paid Membership" %}
   <li {% if page == child %}class="on"{% endif %}>
-    <a href="{{ child.url }}"><i class="ss-icon" style="padding-right: 5px; font-size: .8em;">star</i> {{ child.name }}</a>
+    <a href="{{ child.url }}"><i class="ss-icon" style="padding-right: 5px; font-size: .8em;">cash</i> {{ child.name }}</a>
   </li>
   {% elsif child.type_name == "Activity Stream" %}
   <li {% if page == child %}class="on"{% endif %}>
@@ -184,15 +184,15 @@
   </li>
   {% elsif child.type_name == "Followers" %}
   <li {% if page == child %}class="on"{% endif %}>
-    <a href="{{ child.url }}"><i class="ss-icon" style="padding-right: 5px; font-size: .8em;">reply</i> {{ child.name }}</a>
+    <a href="{{ child.url }}"><i class="ss-icon" style="padding-right: 5px; font-size: .8em;">pointleft</i> {{ child.name }}</a>
   </li>
   {% elsif child.type_name == "Follows" %}
   <li {% if page == child %}class="on"{% endif %}>
-    <a href="{{ child.url }}"><i class="ss-icon" style="padding-right: 5px; font-size: .8em;">redirect</i> {{ child.name }}</a>
+    <a href="{{ child.url }}"><i class="ss-icon" style="padding-right: 5px; font-size: .8em;">pointright</i> {{ child.name }}</a>
   </li>
   {% elsif child.type_name == "Invoices" %}
   <li {% if page == child %}class="on"{% endif %}>
-    <a href="{{ child.url }}"><i class="ss-icon" style="padding-right: 5px; font-size: .8em;">price</i> {{ child.name }}</a>
+    <a href="{{ child.url }}"><i class="ss-icon" style="padding-right: 5px; font-size: .8em;">cart</i> {{ child.name }}</a>
   </li>
   {% elsif child.type_name == "Leaderboard" %}
   <li {% if page == child %}class="on"{% endif %}>
@@ -318,12 +318,12 @@
     </div>
     {% if request.current_signup.parent.has_twitter_info? %}
     <a href="{{ request.current_signup.parent.twitter_profile_url }}">
-      <i class="ss-icon ss-social" style="padding-right: 5px; font-size: .8em;">twitter</i>
+      <i class="ss-icon ss-social-regular" style="padding-right: 5px; font-size: .8em;">twitter</i>
     </a>
     {% endif %}
     {% if request.current_signup.parent.has_facebook_info? %}
     <a href="{{ request.current_signup.parent.facebook_profile_url }}">
-      <i class="ss-icon ss-social" style="padding-right: 5px; font-size: .8em;">facebook</i>
+      <i class="ss-icon ss-social-regular" style="padding-right: 5px; font-size: .8em;">facebook</i>
     </a>
     {% endif %}
     {% if request.current_signup.parent.has_email? %}
@@ -360,25 +360,25 @@
     {% if page and page.slug == "blog" or page.parent.slug == "articles" or page.parent.slug == "commentary" or page.parent.slug == "interviews" or page.parent.slug == "blog" %}
 
         <div class="padtopmore">
-          <a href="http://www.ianpatrickhines.com/blog.rss"><i class="ss-icon" style="padding-right: 5px; font-size: .8em;">rss</i></a> <a href="http://www.ianpatrickhines.com/blog.rss">All Posts (RSS)</a>
+          <a href="http://www.ianpatrickhines.com/blog.rss"><i class="ss-icon ss-social-regular" style="padding-right: 5px; font-size: .8em;">rss</i></a> <a href="http://www.ianpatrickhines.com/blog.rss">All Posts (RSS)</a>
         </div>
 
         {% else %}
 
         <div class="padtopmore">
-          <a href="http://www.ianpatrickhines.com/blog.rss"><i class="ss-icon" style="padding-right: 5px; font-size: .8em;">rss</i></a> <a href="http://www.ianpatrickhines.com/blog.rss">Subscribe with RSS</a>
+          <a href="http://www.ianpatrickhines.com/blog.rss"><i class="ss-icon ss-social-regular" style="padding-right: 5px; font-size: .8em;">rss</i></a> <a href="http://www.ianpatrickhines.com/blog.rss">Subscribe with RSS</a>
         </div>
 
         {% endif %}        
 
         {% if page and page.has_rss? %}
         <div class="padtopmore">
-          <a href="{{ page.rss_url }}"><i class="ss-icon" style="padding-right: 5px; font-size: .8em;">rss</i></a> <a href="{{ page.rss_url }}">{{ page.headline }} Only (RSS)</a>
+          <a href="{{ page.rss_url }}"><i class="ss-icon ss-social-regular" style="padding-right: 5px; font-size: .8em;">rss</i></a> <a href="{{ page.rss_url }}">{{ page.headline }} Only (RSS)</a>
         </div>
 
         {% elsif page and page.has_parent? and page.parent.has_rss? and page.parent.slug != "blog" %}
         <div class="padtopmore">
-          <a href="{{ page.parent.rss_url }}"><i class="ss-icon" style="padding-right: 5px; font-size: .8em;">rss</i></a>
+          <a href="{{ page.parent.rss_url }}"><i class="ss-icon ss-social-regular" style="padding-right: 5px; font-size: .8em;">rss</i></a>
           <a href="{{ page.parent.rss_url }}">{{ page.parent.headline }} Only (RSS)</a>
         </div>
         {% endif %}
