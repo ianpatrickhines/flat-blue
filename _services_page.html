@@ -1,0 +1,236 @@
+{% include "header_content" %}
+<body class="aware-theme v2-theme {{ page.page_class_name }} js">
+<div id="pattern" class="pattern">
+  <div class="wrap" id="wrap">
+    <div id="body" class="page-{{ request.template | replace: '_', '-' }} services-page">
+
+      <div class="header-container clearfix {% if site.has_background_image? %}no-background{% endif %}">
+        <div class="header-background">
+          <div class="width-container clearfix">
+            {% include "nav" %}
+            <header>
+              <h1 class="title">
+                <a href="/">{{ site.long_name }}</a>
+              </h1>
+            </header>
+
+            <section id="top">
+              <h2>
+                I’ll <strong>organize</strong>
+                your nation.
+                <br/>
+                You organize your <strong>community</strong>
+                .
+              </h2>
+              <p class="padtop">
+                <a class="button button-white-border" href="#goals">Learn More</a>
+              </section>
+
+            </div>
+            <!-- .width-container --> </div>
+          <!-- .header-background --> </div>
+        <!-- .header-container -->
+
+        <div class="main-container" id="goals">
+          <div class="main width-container clearfix">
+
+            <div class="row-fluid padbottommore">
+              <div class="span12 tagline">
+                <h2>It takes specific, measurable goals…</h2>
+              </div>
+            </div>
+
+            <div class="row-fluid services-overview">
+              <div class="span4">
+                <div class="service">
+                  <h4 class="ss-icon">flag</h4>
+                  <h3>Setting Clear Goals</h3>
+                  <p>
+                    Let’s start at the end: if everything went perfectly, what would happen? Would you win your election? Eradicate poverty? Whatever it is, that’s our goal. Now, lets work together to chart a course to get there.
+                  </p>
+                </div>
+              </div>
+
+              <div class="span4">
+                <div class="service">
+                  <h4 class="ss-icon">toolbox</h4>
+                  <h3>Emptying the Toolbox</h3>
+                  <p>
+                    Having worked at NationBuilder for more than a year, I know the platform better than almost anyone in the world. I’ll help you figure out how to squeeze every ounce of functionality out of your nation to achieve your goals.
+                  </p>
+                </div>
+              </div>
+
+              <div class="span4">
+                <div class="service">
+                  <h4 class="ss-icon">barchart</h4>
+                  <h3>Measuring Results</h3>
+                  <p>
+                    What gets measured gets managed, which is why we’ll work with you to measure your progress towards your goals. That way we’ll know what’s working &mdash; and what’s not &mdash; and can adjust accordingly.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="main-container" id="data">
+          <div class="main width-container clearfix">
+
+            <div class="row-fluid padbottommore">
+              <div class="span12 tagline">
+                <h2>…supported by a foundation of reliable data…</h2>
+              </div>
+            </div>
+
+            <div class="row-fluid services-overview">
+              <div class="span4">
+                <div class="service">
+                  <h4 class="ss-icon">downloadcloud</h4>
+                  <h3>Collect Your Data</h3>
+                  <p>
+                    I’ll work with you to put all of your data cards on the table. Voter file? Check. Past donors? Check. Email list? Facebook contacts? Twitter followers? Check. Check. Check.
+                  </p>
+                </div>
+              </div>
+
+              <div class="span4">
+                <div class="service">
+                  <h4 class="ss-icon">activity</h4>
+                  <h3>Ensure That It’s Healthy</h3>
+                  <p>
+                    When moving data between platforms, things can get messy. (Have you ever tried migrating your address book from Gmail to Outlook? Whew.) I’ll clean everything up, standardize formatting, and get things import-ready.
+                  </p>
+                </div>
+              </div>
+
+              <div class="span4">
+                <div class="service">
+                  <h4 class="ss-icon">uploadcloud</h4>
+                  <h3>Import Into NationBuilder</h3>
+                  <p>
+                    I’ll take your now-clean data and upload it into your nation &mdash; removing duplicates, matching email addresses to social media accounts, and getting your database game-ready.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="main-container" id="custom-themes">
+          <div class="main width-container clearfix">
+
+            <div class="row-fluid padbottommore">
+              <div class="span12 tagline">
+                <h2>…and presented with an amazing website.</h2>
+              </div>
+            </div>
+
+            <div class="row-fluid services-overview">
+              <div class="span4">
+                <div class="service">
+                  <h4 class="ss-icon">pencilbrushpen</h4>
+                  <h3>Personalized Branding</h3>
+                  <p>
+                    Your website is the face of your organization and the primary way that your supporters will interact with your nation. It should reflect your unique voice and tell your story in a compelling and personal way.
+                  </p>
+                </div>
+              </div>
+
+              <div class="span4">
+                <div class="service">
+                  <h4 class="ss-icon">iphone</h4>
+                  <h3>Responsive Web Design</h3>
+                  <p>
+                    The world has changed. Your site doesn’t just sit on a desk, anymore. Aleady, more people are browsing the web with mobile devices than traditional computers &mdash; and I’ll make sure your site adapts accordingly.
+                  </p>
+                </div>
+              </div>
+
+              <div class="span4">
+                <div class="service">
+                  <h4 class="ss-icon">action</h4>
+                  <h3>Built For Action</h3>
+                  <p>
+                    Organizing is about calling people to action &mdash; and NationBuilder is tailor-made for it. I’ll leverage more than thirty different page-types to help you connect with your supporters and move them up the engagement ladder.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="main-container" id="pricing">
+          <div class="main width-container clearfix">
+
+            <div class="row-fluid padbottommore">
+              <div class="span12 tagline">
+                <h2>Custom NationBuilder themes from $2,900</h2>
+              </div>
+            </div>
+
+            <div class="row-fluid services-overview">
+              <div class="span4">
+                <div class="service">
+                  <h4 class="ss-icon">window</h4>
+                  <h3>Theme Development</h3>
+                  <p>
+                    I will personalize your website’s custom theme based on your unique goals, style, and message. The basic package will meet the needs of most campaigns, faith organizations, or advocacy organizations.
+                  </p>
+                </div>
+              </div>
+
+              <div class="span4">
+                <div class="service">
+                  <h4 class="ss-icon">additem</h4>
+                  <h3>Basic Add-Ons</h3>
+                  <p>
+                    So you’re the sort who knows what they want, eh? That’s wonderful. I can build you that custom splash page or email template you’ve been dreaming of, or help you set up your Google Apps or Tagboard account.
+                  </p>
+                </div>
+              </div>
+
+              <div class="span4">
+                <div class="service">
+                  <h4 class="ss-icon">flask</h4>
+                  <h3>Advanced Add-Ons</h3>
+                  <p>
+                    Lets put your nation into fifth-gear. I can tailor content, actions, and sidebars based on logged-in user data to maximize engagement &amp; action and develop a totally unique homepage template based on your organization's goals and needs.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="row-fluid padbottommore">
+              <div class="span12 subtext">
+                <p>(Don’t need a custom theme? I also offer NationBuilder Expert services starting at $60 per hour.)</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="main-container get-started" id="contact">
+          <div class="width-container">
+
+            <div class="row-fluid padbottommore">
+              <div class="span12 tagline ">
+                <h2>Ready to get started?</h2>
+              </div>
+            </div>
+              {% subpage "home_contact" with "home_contact_form" %}
+          </div>
+        </div>
+
+        <!-- .main --> </div>
+      <!-- .main-container -->{% include "footer" %}</div>
+    <!-- #body --> </div>
+  <!-- #wrap -->
+</div>
+<!-- #pattern -->
+{% include "footer_content" %}

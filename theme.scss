@@ -2005,7 +2005,7 @@ input:focus, textarea:focus {
 
 // Home Page Header background
 
-.home-page .header-background, .about-page .header-container, .services-page .header-container {
+.home-page .header-background, .about-page .header-background, .services-page .header-background {
   background: rgba(41, 128, 185,0.7);
   height: 480px;
 }
@@ -2015,13 +2015,17 @@ input:focus, textarea:focus {
 }
 
 .home-page .header-container {
-  background: url("desk2.jpg") bottom center repeat-x;
+  background: url("rmbp.jpg") bottom center repeat-x;
+}
+
+.services-page .header-container {
+  background: url("meeting.jpg") bottom center repeat-x;
 }
 
 // #top
 
 #top {
-  margin: 225px 0;
+  margin: 175px 0;
   text-align: center;
 }
 
@@ -2064,6 +2068,20 @@ input:focus, textarea:focus {
 
 .services-overview p {
   text-align: center;
+}
+
+.services-page #data, .services-page #pricing {
+  background: $theme-color-1;
+  color: #fff;
+}
+
+.services-page #data h4.ss-icon, .services-page #pricing h4.ss-icon {
+  color: #fff;
+}
+
+.subtext {
+  text-align: center;
+  margin: -40px 0 40px 0;
 }
 
 // About blurb on home page
@@ -2170,7 +2188,7 @@ textarea, input {
   background: #fff;
   box-shadow: none;
   -webkit-box-shadow: none;
-  margin: 0 0 10px 0;
+  margin: 0 0 35px 0;
 }
 
 .home-contact input.submit-button {
@@ -2186,7 +2204,7 @@ textarea, input {
 }
 
 .send-your-message {
-  padding-top: 30px;
+  padding-top: 0px;
   text-align: center;
 }
 
