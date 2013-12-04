@@ -3,21 +3,17 @@
 
 <div class="row-fluid padtopmore home-contact">
   <div class="span6">
-    <label for="feedback_first_name">First Name</label>
-    {% text_field "first_name", class:"text" %}
+    
+    {% text_field "first_name", class:"text", placeholder:"First name" %}
+    
+    {% text_field "last_name", class:"text", placeholder:"Last name" %}
 
-    <label for="feedback_last_name">Last Name</label>
-    {% text_field "last_name", class:"text" %}
+    {% email_field "email", class:"text", placeholder:"Email address" %}
 
-    <label for="feedback_email">Email</label>
-    {% email_field "email", class:"text" %}
-
-    <label for="feedback_mobile_number">Mobile phone (optional)</label>
-    {% phone_field "mobile_number", class:"text" %}
+    {% phone_field "mobile_number", class:"text", placeholder:"Mobile number (optional)" %}
   </div>
   <div class="span6">
-    <label for="feedback_content">{{ page.feedback.content_name }}</label>
-    {% text_area "content", class:"textarea" %}</div>
+    {% text_area "content", class:"textarea", placeholder:"Please tell me about your project." %}</div>
 </div>
 <div class="send-your-message">  
   {% submit_tag page.feedback.submit_button_name, class:"submit-button" %}
