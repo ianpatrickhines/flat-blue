@@ -46,7 +46,7 @@
 	{% if page.public_activities_count > 0 or page.is_commentable? %}
 		</div> <!-- end content_container_top -->	
 	{% endif %}
-  {% include "page_stream" %}
+  {% include "disqus" %}
 	{% else %}
 		</div> <!-- end content_container -->	
 {% endif %}
