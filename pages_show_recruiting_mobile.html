@@ -35,8 +35,8 @@
 		<div class="padtop">
 		Sign in with <a href="{{ request.facebook_connect_url }}">Facebook</a>, <a href="{{ request.twitter_connect_url }}">Twitter</a> or <a href="/login">email</a> to get your personal tracking link.
 		<div class="padtopless">
-			<a href="{{ request.facebook_connect_url }}"><img src="{{ "signin_with_facebook.png" | asset_path }}"></a>
-	  	<a href="{{ request.twitter_connect_url }}"><img src="{{ "signin_with_twitter.png" | asset_path }}"></a>
+			<a class="button facebook-button" href="{{ request.facebook_connect_url }}"><span class="ss-icon ss-social-regular" style="padding-right: 5px; font-size: .8em;">facebook</span> Sign in with Facebook</a>
+	  	  <a class="button twitter-button" href="{{ request.twitter_connect_url }}"><span class="ss-icon ss-social-regular" style="padding-right: 5px; font-size: .8em;">twitter</span> Sign in with Twitter</a>
 		</div>
 		</div>
 	</div>
