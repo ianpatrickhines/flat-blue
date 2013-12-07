@@ -1,4 +1,16 @@
-{% include "header_content" %}
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+  <head>
+    {% include "header_content" %}
+    {{ content_for_header }}
+  </head>
 <body class="aware-theme v2-theme {{ page.page_class_name }} js">
 <div id="pattern" class="pattern">
   <div class="wrap" id="wrap">
