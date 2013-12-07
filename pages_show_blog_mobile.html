@@ -77,9 +77,9 @@
 				Posted by {{ post.author.published_name_linked }} on {{ post.published_at | date: '%B %d, %Y' }}
 		    {% if post.show_stream? %}
 		      {% if post.public_activities_count > 0 %}
-		        <div class="activity_count"><a href="{{ post.url }}#reactions">{{ post.public_activities_count }} reaction{% if post.public_activities_count > 1 %}s{% endif %}</a></div>
+		        <div class="activity_count"><a href="{{ post.url }}#disqus_thread">{{ post.public_activities_count }} reaction{% if post.public_activities_count > 1 %}s{% endif %}</a></div>
 					{% else %}
-					<div class="activity_count"><a href="{{ post.url }}#reactions">Add reaction</a></div>
+					<div class="activity_count"><a href="{{ post.url }}#disqus_thread">Add reaction</a></div>
 		      {% endif %}
 		    {% endif %}
 			</div></li>		
