@@ -48,16 +48,13 @@
       </div>
 
       <div class="excerpt">
-        {{ post.blog_post.content }}
-        {% if post.blog_post.is_extended? %}
-        <span class='read-more'><a href='{{ post.url }}'>Read more</a></span>
-        {% endif %}
+        {{ post.blog_post.content | truncatewords:50 | strip_html }}        
       </div>
 
-      <a href="{{ post.url }}#disqus_thread" class="button small-button">
-        Comment
-      </a>
-
+      {% if post.blog_post.is_extended? %}
+      <a href="{{ post.url }}" class="button small-button">Read more</a>
+      {% endif %}
+      
       {{ "Share" | share_button page_id: post.id }}
     </div>
 
