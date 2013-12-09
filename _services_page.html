@@ -240,9 +240,16 @@
         </div>
 
         <!-- .main --> </div>
-      <!-- .main-container -->{% include "footer" %}</div>
-    <!-- #body --> </div>
-  <!-- #wrap -->
-</div>
-<!-- #pattern -->
+      <!-- .main-container -->
+          
+          {{ content_for_footer }}
+
+          {% include "footer" %}
+          
+        </div>
+        <!-- #body -->
+      </div>
+      <!-- #wrap -->
+    </div>
+    <!-- #pattern -->
 {% include "footer_content" %}
