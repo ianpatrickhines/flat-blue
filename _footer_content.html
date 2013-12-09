@@ -16,7 +16,7 @@ jQuery.backstretch("{{ site.background_image_url }}", {speed: 0});
     </style>
     
     
-        <!-- Disqus Code -->
+        {% comment %}<!-- Disqus Code -->
     <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
     var disqus_shortname = 'ianpatrickhines'; // required: replace example with your forum shortname
@@ -28,7 +28,7 @@ jQuery.backstretch("{{ site.background_image_url }}", {speed: 0});
         s.src = '//' + disqus_shortname + '.disqus.com/count.js';
         (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
     }());
-    </script>
+    </script>{% endcomment %}
     
     {% comment %}Google Plus Javascript
     <script type="text/javascript">
