@@ -68,12 +68,16 @@
         {% endif %}
       </div>
       
-      {% if post.is_commentable? %}
+      {% if post.show_stream? %}
       
       <a href="{{ post.url }}#disqus_thread" class="button small-button">
+        {% if post.public_activities_count > 0 %}
+        {{ post.public_activities_count }} reaction{% if post.public_activities_count > 1 %}s{% endif %}
+        {% else %}
         Add your reaction
+        {% endif %}
+        {% endif %}
       </a>
-      {% endif %}
       {{ "Share" | share_button page_id: post.id }}
     </div>
     
