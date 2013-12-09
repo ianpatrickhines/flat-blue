@@ -54,12 +54,8 @@
         {% endif %}
       </div>
 
-      <a href="{{ post.url }}#addreaction" class="button small-button">
-        {% if post.public_activities_count > 0 %}
-          {{ post.public_activities_count }} reaction{% if post.public_activities_count > 1 %}s{% endif %}
-        {% else %}
-          Add your reaction
-        {% endif %}
+      <a href="{{ post.url }}#disqus_thread" class="button small-button">
+        Comment
       </a>
 
       {{ "Share" | share_button page_id: post.id }}
