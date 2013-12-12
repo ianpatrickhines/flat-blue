@@ -212,7 +212,9 @@
             <label for="invoice_payment_card_verification">Security code (on back)</label>{% text_field "card_verification", class:"text" %}
           </div>
 
-          <div class="span6">{% submit_tag "Process Payment", class:"success-button" %}</div>
+          <div class="span3">{% submit_tag "Process Payment", class:"success-button" %}</div>
+
+          <div class="span3 byline"><span class="ss-icon ss-social-regular" style="float: left; font-size: 2em; padding: 10px 10px 0 0;">paypal</span>Payments are processed securely through PayPal.</div>
 
           <div class="span6">
             <div class="form-submit"></div>
@@ -235,7 +237,7 @@
 
 {% if closed_invoices.size > 0 %}
 
-<div class="padbottomless">
+<div class="padbottomless padtopmore">
   <h4>Closed invoices</h4>
 </div>
 
