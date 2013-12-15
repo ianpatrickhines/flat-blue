@@ -310,7 +310,7 @@
 <a class="button supporter-nav-button" href="{{ site.button3_page.full_url_with_profile_recruiter }}">{{ site.button3_text }}</a>
 {% endif %}
 
-{% if request.current_signup.has_parent? %}
+{% comment %}{% if request.current_signup.has_parent? %}
 <div class="clearfix padtop">
   <div class="point-pic-left">{{ request.current_signup.parent.profile_image }}</div>
   <div class="point-pic-right">
@@ -334,7 +334,7 @@
     {% endif %}
   </div>
 </div>
-{% endif %}
+{% endif %}{% endcomment %}
 
 <div class="padtopmore">
   <div class="box fusion">
