@@ -70,6 +70,29 @@ $header-texture: "";
 //mobile nav
 @import "mobile-nav";
 
+// Fusion ads
+
+  .fusion {
+    min-height: 130px;
+    font-size: .8em;
+  }
+
+  .fusiontext a {
+    color: $theme-color-1;
+  }
+
+  .fusion a[href="http://fusionads.net"] {
+    color: $silver !important;
+    display: block;
+    padding: 1em 0 0 0;
+  }
+
+  .fusionimg {
+    float: none !important;
+    display: block !important;
+    padding: 0 10px 10px 0;
+  }
+
 // page layout if the sidebar is turned on
 
 .twocolumn-container {
@@ -599,7 +622,28 @@ ul#page-stream {
 // Desktop above 1140px styles
 
 @media only screen and (min-width: 1140px) {
-  
+  // Fusion ads
+
+  .fusion {
+    min-height: 130px;
+    font-size: .8em;
+  }
+
+  .fusiontext a {
+    color: $theme-color-1;
+  }
+
+  .fusion a[href="http://fusionads.net"] {
+    color: $silver !important;
+    display: block;
+    padding: 1em 0 0 0;
+  }
+
+  .fusionimg {
+    float: left !important;
+    padding: 0 10px 10px 0;
+  }
+
   // maximum side width container
   
   .width-container {
