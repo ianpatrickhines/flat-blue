@@ -216,7 +216,7 @@
   </li>
   {% elsif child.type_name == "Redirect" %}
   <li {% if page == child %}class="on"{% endif %}>
-    <a href="{{ child.url }}"><i class="ss-icon" style="padding-right: 5px; font-size: .8em;">sync</i> {{ child.name }}</a>
+    <a href="{{ child.url }}"><i class="ss-icon" style="padding-right: 5px; font-size: .8em;">redirect</i> {{ child.name }}</a>
   </li>
   {% elsif child.type_name == "Rules" %}
   <li {% if page == child %}class="on"{% endif %}>
@@ -310,7 +310,9 @@
 <a class="button supporter-nav-button" href="{{ site.button3_page.full_url_with_profile_recruiter }}">{{ site.button3_text }}</a>
 {% endif %}
 
-{% comment %}{% if request.current_signup.has_parent? %}
+{% comment %}
+<!-- Display Point Person -->
+{% if request.current_signup.has_parent? %}
 <div class="clearfix padtop">
   <div class="point-pic-left">{{ request.current_signup.parent.profile_image }}</div>
   <div class="point-pic-right">
@@ -337,6 +339,12 @@
 {% endif %}{% endcomment %}
 
 <div class="padtopmore">
+  <div class="box charity center">
+    <a href="/charity"><img src="charitywater2.jpg" alt="charity: water" /></a>
+  </div>
+</div>
+
+<div class="padtopmore">
   <div class="box fusion">
     <div id="fusion_ad">
       <a href="http://fusionads.net">Powered by Fusion</a>
@@ -346,26 +354,17 @@
 
 <div class="padtopmore">
   <div class="box">
-    {% if site.has_facebook_page? %}
-    <div class="desktop-visible">
-      <div class="fb-like-box" data-href="{{ site.broadcaster.facebook_page_profile_url }}" data-width="240" data-show-faces="true" data-stream="false" data-header="false"></div>
-    </div>
-    <div class="mobile-visible">
-      <div class="fb-like-box" data-href="{{ site.broadcaster.facebook_page_profile_url }}" data-width="240" data-stream="false" data-show-faces="false"></div>
-    </div>
+    {% if site.has_facebook_page? %}                
+      <div class="fb-like-box" data-href="{{ site.broadcaster.facebook_page_profile_url }}" data-width="240" data-stream="false" data-show-faces="false"></div>        
     {% else %}
-    <fb:like href="{{ site.full_url }}" colorscheme="{{ site.facebook_colorscheme }}" width="240"></fb:like>
-    {% endif %}  
+      <fb:like href="{{ site.full_url }}" colorscheme="{{ site.facebook_colorscheme }}" width="240"></fb:like>
+    {% endif %}    
     
     {% if site.has_twitter? %}
     <div class="padtopmore">
       <a href="{{ site.broadcaster.twitter_profile_url }}" class="twitter-follow-button" data-show-count="true" data-size="large" data-show-screen-name="false">Follow @{{ site.broadcaster.twitter_login }} on Twitter</a>
     </div>
     {% endif %}
-    
-    {% comment %}<div class="padtopmore">
-      <div class="g-follow" data-annotation="bubble" data-height="24" data-href="//plus.google.com/108466010816642032003" data-rel="publisher"></div>
-    </div>{% endcomment %}
     
     {% if page and page.slug == "blog" or page.parent.slug == "articles" or page.parent.slug == "commentary" or page.parent.slug == "interviews" or page.parent.slug == "blog" %}
 
