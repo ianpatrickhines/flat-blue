@@ -71,7 +71,7 @@
         {% endif %}
         {% endif %}
 
-        {% if site.has_button1? %}
+        {% comment %}{% if site.has_button1? %}
         {% if site.button1_page.type_name == 'Donation' %}
         <div class="padbottomless padtopmore">
           <strong>Donate on behalf of {{ profile.published_name }}:</strong>
@@ -86,7 +86,7 @@
 
         {% if site.has_button3? %}
         <a class="submit-button" href="{{ site.button3_page.full_url_with_profile_recruiter }}">{{ site.button3_text }}</a>
-        {% endif %}
+        {% endif %}{% endcomment %}
       </div>
     </div>
   </div>
