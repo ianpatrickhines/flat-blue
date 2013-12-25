@@ -2243,3 +2243,13 @@ textarea, input {
   float: left;
   padding: 0 10px 10px 0;
 }
+
+// Bold links in content area
+
+#content p a, #content li a {
+  font-weight: bold;
+}
+
+#content .pagination li a {
+  font-weight: normal !important;
+}
