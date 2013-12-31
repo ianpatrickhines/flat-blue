@@ -17,4 +17,13 @@ Amount due: {{ invoice.amount_due_format }}<br/>
 {% endif %}
 Status: {{ invoice.status }}<br/>
 <br />
-<a href="{{ invoice_payment_url }}">Your invoice</a>.
+<a href="{{ invoice_payment_url }}">Click here to view your invoice</a>.
+<br />
+<br />
+You may pay your invoice with a credit card on my website by clicking the link above. Credit card payments are processed securely via PayPal.
+<br />
+<br />
+If you are unable to pay via credit card, please let me know immediately so that we can make other arrangements.
+<br />
+<br />
+(If the above link does not work, please paste this URL directly into your browser to view and pay your invoice: <a href="{{ invoice_payment_url }}">{{ invoice_payment_url }}</a>)
