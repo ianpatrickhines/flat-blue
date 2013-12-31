@@ -8,8 +8,10 @@
 <!--[if gt IE 8]><!-->
 <html class="no-js"> <!--<![endif]-->
   <head>
-    {% include "header_content" %}
+
     {{ content_for_header }}
+    {% include "header_content" %}
+    
   </head>
   <body class="aware-theme v2-theme {{ page.page_class_name }} js">
     <div id="pattern" class="pattern">
