@@ -45,8 +45,14 @@
         {{ post.blog_post.content | truncatewords:50 | strip_html }}
       </div>
 
-      {% if post.blog_post.is_extended? %}
-      <a href="{{ post.url }}" class="button small-button">Read more</a>
+      {% if post.is_commentable? == true %}
+      <a href="{{ post.url }}#addreaction" class="button small-button">
+      {% if post.public_activities_count > 0 %}
+        {{ post.public_activities_count }} reaction{% if post.public_activities_count > 1 %}s{% endif %}
+      {% else %}
+        Add your reaction
+      {% endif %}      
+      </a>
       {% endif %}
       
       {{ "Share" | share_button page_id: post.id }}
